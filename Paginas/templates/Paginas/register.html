@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{% static 'css/index.css' %}" rel="stylesheet">
+</head>
+<body>
+    <h2>Register</h2>
+    <form method="post">
+        {%csrf_token%}
+        <div class="container">
+          <label for="uname"><b>Nome</b></label>
+          <input type="text" placeholder="Insira seu Nome" name="uname" class="uname" id="uname" required>
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Insira seu Email" name="email" class="email" id="email" required>
+          <label for="psw"><b>Senha</b></label>
+          <input type="password" placeholder="Insira sua Senha" name="psw" id="psw" class="psw" required>
+          <button type="submit" class="btnLogin">Registrar</button>
+            <label>
+                <input type="checkbox" name="remember" id="remember" class="remember"> Lembrar senha
+            </label>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+          <a href="{% url 'index' %}" class="cancelbtn">Cancelar</a>
+      </div>
+    </form>
+    <span class="credits">Credits to <a href="https://www.w3schools.com/howto/howto_css_login_form.asp">W3School</a></span>
+</body>
+</html>

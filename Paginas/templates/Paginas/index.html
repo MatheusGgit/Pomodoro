@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{% static 'css/index.css' %}" rel="stylesheet">
+</head>
+<body>
+    <h2>Login</h2>
+    <form method="post">
+        {%csrf_token%}
+        <div class="container">
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Insira seu Email" name="email" class="email" id="email" required>
+            <label for="psw"><b>Senha</b></label>
+            <input type="password" placeholder="Insira sua Senha" name="psw" id="psw" class="psw" required>
+
+            {% if messages %}
+                {% for message in messages %}
+                    <div class = "{{message.tags}}" role="alert">
+                        {{message}}
+                        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                    </div>
+                {% endfor %}
+            {% endif %}
+
+            <button type="submit" class="btnLogin">Fazer Login</button>
+            <span>
+            <a href="{% url 'register' %}" class="registerHref">Cadastrar-se</a>
+            </span>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+            <span class="psw">Esqueceu sua <a href="#" style="margin-left: 0.3%;">senha?</a></span>
+        </div>
+    </form>
+    <span class="credits">Credits to <a href="https://www.w3schools.com/howto/howto_css_login_form.asp">W3School</a></span>
+</body>
+</html>
