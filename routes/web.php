@@ -21,6 +21,8 @@ Route::get('/', function () {
 Route::get('/index', [Timer::class, 'getTime']);
 Route::get('/index/c', [Timer::class, 'addTime']);
 Route::get('/index/p', [Timer::class, 'getTime']);
+Route::get('/index/config', [Timer::class, 'config']);
+Route::get('/index/volumeUp', [Timer::class, 'getTime']);
 
 Route::get('/counter', function () {
     return view('counter');

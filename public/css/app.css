@@ -1,9 +1,14 @@
 body{
     margin: 0;
 }
-h1, h2, h3, h4, h5, span{
+h1, h2, h3, h4, h5, span, a{
     font-family: 'Libre Franklin', sans-serif;
     padding: 1rem;
+    text-decoration: none;
+}
+label{
+    font-family: 'Libre Franklin', sans-serif;
+    text-decoration: none;
 }
 
 .header{
@@ -40,7 +45,14 @@ h1, h2, h3, h4, h5, span{
     font-size: 20vh;
 }
 
+.material-symbols:hover{
+    color: blue;
+    transition: 300ms;
+}
 .material-symbols{
+    transition: 300ms;
+    text-decoration: none;
+    color: black;
     padding:  1rem;
     font-size: 40px;
     font-family: 'Material Symbols Outlined';
@@ -110,5 +122,29 @@ h1, h2, h3, h4, h5, span{
     align-items: center;
     box-shadow: black;
     bottom: 5%;
+}
+
+.configMenu{
+    flex-direction: column;
+    border-radius: 10%;
+    width: 25%;
+    height: 65%;
+    display: flex;
+    position: absolute;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
+}
+
+.configMenuText{
+    font-size: 1vh;
+    border-radius: 1vh;
+    height: 3vh;
+    width: 35vh;
+}
+.divEdit{
+    display: flex;
+    flex-direction: column;
 }
 

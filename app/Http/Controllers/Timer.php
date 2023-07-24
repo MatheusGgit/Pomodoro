@@ -22,4 +22,16 @@ class Timer extends Controller
         $stamp = $dateTime->format('Y-m-d H:i:s');
         return view("index", ["stamp"=>$stamp]);
     }
+
+    public function volumeUp(){
+        $dateTime = new DateTime();
+        $stamp = $dateTime->format('Y-m-d H:i:s');
+        return view("index", ["stamp"=>$stamp]);
+    }
+
+    public function config(){
+        $dateTime = new DateTime();
+        $stamp = $dateTime->format('Y-m-d H:i:s');
+        return view("config", ["stamp"=>$stamp]);
+    }
 }
