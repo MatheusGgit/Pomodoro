@@ -11,6 +11,7 @@ label{
     text-decoration: none;
 }
 
+/* layout */
 .header{
     display: flex;
     position: absolute;
@@ -49,6 +50,7 @@ label{
     color: blue;
     transition: 300ms;
 }
+
 .material-symbols{
     transition: 300ms;
     text-decoration: none;
@@ -87,6 +89,7 @@ label{
     font-size: 3vh;
     transition: 200ms ease;
 }
+
 .btn-definir:hover{
     width: 33vh;
     height: 10vh;
@@ -105,6 +108,7 @@ label{
     font-size: 3vh;
     transition: 200ms ease;
 }
+
 .btn-parar:hover{
     width: 30vh;
     height: 8vh;
@@ -124,6 +128,7 @@ label{
     bottom: 5%;
 }
 
+/* config */
 .configMenu{
     flex-direction: column;
     border-radius: 10%;
@@ -143,8 +148,41 @@ label{
     height: 3vh;
     width: 35vh;
 }
+
 .divEdit{
     display: flex;
     flex-direction: column;
 }
 
+/* defineTime */
+.chooseTimeMenu{
+    border-radius: 1.5rem;
+    width: 45%;
+    height: 45%;
+    display: flex;
+    position: absolute;
+    background: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 3vh;
+}
+
+.btnSelection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.chooseTimeBtn{
+    border-radius: 10%;
+    border: none;
+    width: 7rem;
+    height: 5.5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    background: #6290d9;
+    color: #ffffff;
+    cursor: grab;
+}

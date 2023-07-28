@@ -17,13 +17,10 @@ use App\Http\Controllers\Timer;
 Route::get('/', function () {
     return redirect('index');
 });
-
-Route::get('/index', [Timer::class, 'getTime']);
-Route::get('/index/c', [Timer::class, 'addTime']);
-Route::get('/index/p', [Timer::class, 'getTime']);
+Route::get('/index', [Timer::class, 'Time']);
+Route::get('/index/c', [Timer::class, 'defineTime']);
+Route::get('/index/c/{m}', [Timer::class, 'addTime']);
+Route::get('/index/p', [Timer::class, 'Time']);
 Route::get('/index/config', [Timer::class, 'config']);
-Route::get('/index/volumeUp', [Timer::class, 'getTime']);
+Route::get('/index/edit', [Timer::class, 'editName']);
 
-Route::get('/counter', function () {
-    return view('counter');
-});

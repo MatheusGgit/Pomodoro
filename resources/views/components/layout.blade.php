@@ -20,7 +20,6 @@
         </div>
 
         <div class="simbols">
-            <a href="/index/volumeUp"><span class="material-symbols">volume_up</span></a>
             <a href="/index/config"><span class="material-symbols">settings</span></a>
         </div>
     </header>

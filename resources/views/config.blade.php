@@ -5,7 +5,10 @@
         <h3>Editar</h3>
         <div class="divEdit">
             <label for="configMenuText">Nome</label>
-            <input type="text" class="configMenuText">
+            <form action="/index/edit">
+                <input type="text" class="configMenuText">
+                <button>Concluir</button>
+            </form>
         </div>
     </div>
 @endsection
