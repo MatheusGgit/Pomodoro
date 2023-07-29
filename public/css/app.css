@@ -185,4 +185,11 @@ label{
     background: #6290d9;
     color: #ffffff;
     cursor: grab;
+    transition: 200ms;
+}
+
+.chooseTimeBtn:hover{
+    width: 7.5rem;
+    height: 6rem;
+    transition: 200ms;
 }
